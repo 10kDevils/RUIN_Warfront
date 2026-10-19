@@ -10,13 +10,19 @@
 local ADDON, ns = ...
 local R = RUIN_API
 if not R or (R.apiLevel or 1) < 3 then
-    print("|cffc41e3aRUIN|r Warfront needs a newer RUIN Core (0.3.0 or later).")
+    print("|cff54b7d9[RUIN]|r Warfront needs a newer RUIN Core (0.3.0 or later).")
     return
 end
 local W = R.Widgets
 local C = W.COLORS
 
-local M = R:RegisterModule("Warfront", { version = "0.3.0" })
+local M = R:RegisterModule("Warfront", { version = "0.3.2" })
+
+-- Retired: RUIN's world PvP runs on Overlord Forever, and Warfront's bounties
+-- and rally points moved to RUIN Muster. Say so once per session.
+C_Timer.After(12, function()
+    print("|cff54b7d9[RUIN]|r Warfront is retired. RUIN uses Overlord Forever for world PvP; bounties and rally points are in RUIN Muster. You can disable or remove RUIN Warfront.")
+end)
 
 local RADIUS = 0.02            -- fraction of the zone map (roughly 60-100 yards)
 local CAPTURE_SECONDS = 60
@@ -700,10 +706,12 @@ local function createHUD()
 
     -- Radar: a top-down view of the objective's circle around you, forward
     -- at the top. The ring spins slowly and turns green when you're inside.
-    local radar = CreateFrame("Frame", "RUIN_WarfrontRadar", hud, BackdropTemplateMixin and "BackdropTemplate" or nil)
+    local radar = CreateFrame("Frame", "RUIN_WarfrontRadar", hud, (not W.Skin and BackdropTemplateMixin) and "BackdropTemplate" or nil)
     radar:SetSize(RADAR_SIZE, RADAR_SIZE)
     radar:SetPoint("TOP", hud, "BOTTOM", 0, -6)
-    if radar.SetBackdrop then
+    if W.Skin then
+        W.Skin(radar, "bg", 0.8, "border")           -- RUIN navy (Core 0.3.1+)
+    elseif radar.SetBackdrop then
         radar:SetBackdrop({ bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
                             edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 16,
                             edgeSize = 12, insets = { left = 3, right = 3, top = 3, bottom = 3 } })

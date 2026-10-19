@@ -1,8 +1,8 @@
-## Interface: 16001
-## Title: |cffc41e3aRUIN|r Warfront
-## Notes: RUIN's world PvP: officer-set objectives, captures by presence, and Call to Arms.
+## Interface: 16001, 120105
+## Title: |cffe6b862RUIN|r Warfront (retired)
+## Notes: Retired. RUIN uses Overlord Forever for world PvP; bounties and rally points moved to RUIN Muster.
 ## Author: RUIN
-## Version: 0.3.0
+## Version: 0.3.2
 ## Dependencies: RUIN_Core
 ## SavedVariables: RUIN_WarfrontDB
 ## IconTexture: Interface\Icons\INV_BannerPVP_01

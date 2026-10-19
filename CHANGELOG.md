@@ -6,6 +6,13 @@ Versioning: the third number counts the meaningful changes made since the second
 
 (nothing yet)
 
+## 0.3.2 — 2026-10-18
+
+2 changes since 0.3.0. **RUIN Warfront is retired.** RUIN's world PvP runs on Overlord Forever; the features Overlord has no match for (bounties confirmed by a witness, and officer-set meeting points, now called rally points) moved to RUIN Muster 0.3.3.
+
+1. Picks up the new RUIN look from RUIN Core 0.3.7, and the TOC lists Retail's interface number next to WoW Forever's. The radar under the war HUD uses the new navy frame.
+2. A one-line notice after login says Warfront is retired and where its features went.
+
 ## 0.3.0 — 2026-10-18
 
 - Suite release: every RUIN addon moves to 0.3.0 together, bringing everything from the 0.2.x entries below. No further code changes.

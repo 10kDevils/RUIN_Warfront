@@ -1,11 +1,13 @@
-# RUIN Warfront
+# RUIN Warfront (retired)
+
+> **Retired in October 2026.** The RUIN Gaming Companion App uses **Overlord Forever** for world PvP: its campaign, keeps, captures, call to arms, Most Wanted and leaderboards. What Overlord has no match for moved to **RUIN Muster** 0.3.3: bounties on rival guilds and players confirmed by a RUIN witness, and rally points (an event's meeting place on everyone's map, contested when RUIN Intel sees enemies nearby). Disable or remove this addon. The text below describes the last version.
 
 RUIN's own war in the open world: officer-set objectives captured by standing on them together, Call to Arms, bounties on rival guilds, and a weekly war record.
 
 Part of the RUIN addon suite. Requires **RUIN Core** (0.3.0 or later). With **RUIN Intel** installed, enemy sightings near an objective mark it contested and "under attack" calls show on your HUD.
 
 ## The experience
-- **Where it lives:** the Warfront page in the RUIN window (Objectives, Bounties, War record), the on-screen HUD, pins on the world map and minimap, `/wf`, and key bindings for Call to Arms and opening the page.
+- **Where it lives:** the Warfront tab in the RUIN window (Objectives, Bounties, War record), the on-screen HUD, pins on the world map and minimap, `/wf`, and key bindings for Call to Arms and opening the page.
 - **Objectives:** an officer stands somewhere that matters and presses *Mark objective here*. Everyone gets an alert; the HUD's arrow points to the nearest objective, and a radar shows the circle as you get close.
 - **Capturing:** enough RUIN members inside the circle (2 by default) for 60 seconds take it. The guild with the most members present gets the credit.
 - **Contested:** an Intel enemy sighting within about 300 yards of an objective marks it CONTESTED on the HUD, list and map for ten minutes.
