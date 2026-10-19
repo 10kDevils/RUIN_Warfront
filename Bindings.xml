@@ -1,0 +1,8 @@
+<Bindings>
+	<Binding name="RUIN_WARFRONT_CTA" header="RUIN_WARFRONT" category="ADDONS">
+		RUIN_Warfront_CallToArms()
+	</Binding>
+	<Binding name="RUIN_WARFRONT_OPEN" category="ADDONS">
+		RUIN_Warfront_Open()
+	</Binding>
+</Bindings>

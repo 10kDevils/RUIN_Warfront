@@ -1,0 +1,11 @@
+## Interface: 16001
+## Title: |cffc41e3aRUIN|r Warfront
+## Notes: RUIN's world PvP: officer-set objectives, captures by presence, and Call to Arms.
+## Author: RUIN
+## Version: 0.3.0
+## Dependencies: RUIN_Core
+## SavedVariables: RUIN_WarfrontDB
+## IconTexture: Interface\Icons\INV_BannerPVP_01
+## X-Category: Guild
+
+Warfront.lua
